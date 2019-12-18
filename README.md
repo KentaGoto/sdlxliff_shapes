@@ -3,3 +3,6 @@ Shapes sdlxliff for easy reading.
 
 **Warnings**  
 Overwrite.
+
+## Requirements 
+xmllint
