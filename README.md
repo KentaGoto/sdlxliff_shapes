@@ -5,4 +5,6 @@ Shapes sdlxliff for easy reading.
 Overwrite.
 
 ## Requirements 
-xmllint
+- xmllint
+- Windows
+- Perl5.26 or above
