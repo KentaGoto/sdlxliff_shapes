@@ -1,5 +1,7 @@
 # sdlxliff_shapes 
-Shapes sdlxliff for easy reading.
+
+## Description  
+Run xmllint on the sdlxliff files.  
 
 **Warnings**  
 Overwrite.
@@ -7,4 +9,4 @@ Overwrite.
 ## Requirements 
 - xmllint
 - Windows
-- Perl5.26 or above
+- Perl5
