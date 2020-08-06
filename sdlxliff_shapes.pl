@@ -17,18 +17,20 @@ $dir =~ s{"$}{};
 chdir "$dir";
 
 my @sdlxliffs = File::Find::Rule->file->name('*.sdlxliff')->in($dir);
-find( \&xmllint, $dir );
+&xmllint( \@sdlxliffs );
 
 print "\nComplete!\n";
 
 
 sub xmllint {
-	for ( @sdlxliffs ) {
+	my ($sdlxliffs_ref) = @_;
+	my @sdlxliffs = @$sdlxliffs_ref;
+	foreach ( @sdlxliffs ) {
 		my ($basename, $dirname) = fileparse $_;
 		my $fullpath = $dirname.$basename;
 		print "Processing...: $fullpath"."\n";
 		chdir $dirname;
-		my $cmd = "xmllint --format $basename --output $basename"; # File overwrite
+		my $cmd = "xmllint --format --huge \"$basename\" --output \"$basename\""; # File overwrite
 		system(`$cmd`);
 	}
 }
