@@ -4,7 +4,7 @@
 Run xmllint on the sdlxliff files.  
 
 **Warnings**  
-Overwrite.
+The sdlxliff file(s) will be overwritten.  
 
 ## Requirements 
 - xmllint
