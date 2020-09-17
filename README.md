@@ -11,3 +11,6 @@ The sdlxliff file(s) will be overwritten.
 - xmllint
 - Windows
 - Perl5
+
+## License
+MIT
