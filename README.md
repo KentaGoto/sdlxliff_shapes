@@ -14,3 +14,6 @@ The sdlxliff file(s) will be overwritten.
 
 ## License
 MIT
+
+## Author  
+Kenta Goto
